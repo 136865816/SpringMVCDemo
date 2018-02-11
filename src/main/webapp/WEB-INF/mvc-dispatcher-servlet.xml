@@ -28,7 +28,8 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
-    <!-- 表示JPA Repository所在的包 -->
+
+   <!-- &lt;!&ndash; 表示JPA Repository所在的包 &ndash;&gt;
     <jpa:repositories base-package="com.gaussic.repository"/>
 
     <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
@@ -67,11 +68,11 @@
         </property>
     </bean>
 
-    <!-- 事务管理 -->
+    &lt;!&ndash; 事务管理 &ndash;&gt;
     <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
         <property name="entityManagerFactory" ref="entityManagerFactory"/>
     </bean>
 
-    <!-- 开启事务管理注解 -->
-    <tx:annotation-driven transaction-manager="transactionManager"/>
+    &lt;!&ndash; 开启事务管理注解 &ndash;&gt;
+    <tx:annotation-driven transaction-manager="transactionManager"/>-->
 </beans>
