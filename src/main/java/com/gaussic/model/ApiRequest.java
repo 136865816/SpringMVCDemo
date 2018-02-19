@@ -20,4 +20,9 @@ public class ApiRequest<T> {
         this.data = data;
     }
 
+
+    @Override
+    public String toString() {
+        return "mac="+mac + data.toString();
+    }
 }
